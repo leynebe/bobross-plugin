@@ -12,4 +12,4 @@ The way the plugin works is completely the same, just the images, quotes and som
 
 **I'm not affiliated with Bob Ross in any way, just a fan. Go to https://www.twitch.tv/bobross to support his ongoing livestream. As far as I know it is maintained by the people that run https://www.bobross.com.**
 
-**Original code was written by Cliffano Subagio / cliffano in 2009.
+**Original code was written by Cliffano Subagio / cliffano in 2009.**
