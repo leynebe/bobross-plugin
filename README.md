@@ -22,15 +22,21 @@ The way the plugin works is completely the same, just the images, quotes and som
 
 ### Failure
 
-![](samples/example-3.png)
-![](samples/example-3.2.png)
+Get a comforting portait of a confident and forgiving man when your build fails. Don't forget to [beat the devil](https://www.youtube.com/watch?v=KM971KEFVco) out of the developer that failed your build when you're done fixing that sucker.
+
+![](samples/example-failure-v1.png)
+![](samples/example-failure-v2.png)
 
 ### Unstable
 
-![](samples/example-2.png)
-![](samples/example-2.2.png)
+Get a confused but cute little [animal](https://www.youtube.com/watch?v=1koOWsj70d4) when things are a bit unstable.
+
+![](samples/example-unstable-v1.png)
+![](samples/example-unstable-v2.png)
 
 ### Success
 
-![](samples/example-1.png)
-![](samples/example-1.2.png)
+Get a beautiful piece of landscape with the possibility of happy little trees as a reward for successful builds.
+
+![](samples/example-success-v1.png)
+![](samples/example-success-v2.png)
