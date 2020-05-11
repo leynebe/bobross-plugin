@@ -14,6 +14,8 @@ plunge and install this plugin to finally see the light. Why not you?
 **In all seriousness though, this is simply the [ChuckNorris Jenkins plugin](https://github.com/jenkinsci/chucknorris-plugin), but completely "reskinned" to represent Bob Ross. 
 The way the plugin works is completely the same, just the images, quotes and some class and function names are different.**
 
+**DON'T use this on production worthy Jenkins instances, I have no idea what I'm doing when writing Java code. I literally find-replaced everything that was Chuck related into something that was Bob related.**
+
 **I'm not affiliated with the late Bob Ross in any way, just a fan. Go to https://www.twitch.tv/bobross to support his ongoing 24/7 Twitch livestream. As far as I know it is maintained by the people that run https://www.bobross.com.**
 
 **Original code was written by [Cliffano Subagio / cliffano](https://github.com/cliffano) in 2009.**
