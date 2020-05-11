@@ -1,5 +1,7 @@
 # Bob Ross Jenkins Plugin
 
+![](https://github.com/leynebe/bobross-plugin/workflows/Create%20maven.yaml/badge.svg?branch=master)
+
 ## Intro
 
 This plugin adds an absolutely delightful feature to Jenkins:
