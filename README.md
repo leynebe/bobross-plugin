@@ -1,6 +1,6 @@
 # Bob Ross Jenkins Plugin
 
-![](https://img.shields.io/github/workflow/status/leynebe/bobross-plugin/Java CI with Maven)
+![](https://img.shields.io/github/workflow/status/leynebe/bobross-plugin/Java%20CI%20with%20Maven)
 
 ## Intro
 
