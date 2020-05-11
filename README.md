@@ -1,6 +1,6 @@
 # Bob Ross Jenkins Plugin
 
-![](https://github.com/leynebe/bobross-plugin/workflows/Create%20maven.yaml/badge.svg?branch=master)
+![](https://img.shields.io/github/workflow/status/leynebe/bobross-plugin/Java CI with Maven)
 
 ## Intro
 
