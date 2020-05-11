@@ -41,10 +41,6 @@ public enum Style {
      */
     public static final Style get(final Result result) {
         Style style;
-        //
-        // TODO: find a way to cycle over a couple of files so the same image doesn't keep showing up.
-        // TODO: watch out for .png files, find a solution for that.
-        //
         if (Result.FAILURE.equals(result)) {
             // Get a comforting portait of a confident and forgiving man when your build fails.
             style = PORTRAIT;

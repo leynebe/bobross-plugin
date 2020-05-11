@@ -42,3 +42,10 @@ Get a beautiful piece of landscape with the possibility of happy little trees as
 
 ![](samples/example-success-v1.png)
 ![](samples/example-success-v2.png)
+
+## To-do
+
+* Add picking random images to Style.java.
+* Find a solution for adding .png files.
+* Add more images (see unused folder)
+* Add more quotes.
