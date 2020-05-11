@@ -8,17 +8,17 @@
         <relativePath/>
     </parent>
     <groupId>org.jvnet.hudson.plugins</groupId>
-    <artifactId>chucknorris</artifactId>
+    <artifactId>bobross</artifactId>
     <version>1.3-SNAPSHOT</version>
-    <name>ChuckNorris Plugin</name>
-    <description>Displays a picture of Chuck Norris (instead of Jenkins the butler) and a random Chuck Norris 'The Programmer' fact on each build page.</description>
+    <name>BobRoss Plugin</name>
+    <description>Displays a picture of Bob Ross (instead of Jenkins the butler) and a random Bob Ross 'The Programmer' fact on each build page.</description>
 
     <properties>
         <java.level>8</java.level>
         <jenkins.version>2.138.4</jenkins.version>
     </properties>
 
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/ChuckNorris+Plugin</url>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/BobRoss+Plugin</url>
     <packaging>hpi</packaging>
 
     <developers>
@@ -100,9 +100,9 @@
     </repositories>
 
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/chucknorris-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:jenkinsci/chucknorris-plugin.git</developerConnection>
-        <url>https://github.com/jenkinsci/chucknorris-plugin</url>
+        <connection>scm:git:git://github.com/leynebe/bobross-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:leynebe/bobross-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/bobross-plugin</url>
         <tag>HEAD</tag>
     </scm>
 

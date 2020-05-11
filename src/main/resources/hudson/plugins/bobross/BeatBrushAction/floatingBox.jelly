@@ -1,0 +1,18 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:local="local">
+    <img src="${rootURL}/plugin/bobross/images/icon.jpg" width="16" height="16" alt="${from.displayName} Icon"/><st:nbsp/><j:out value="${from.fact}"/>
+    <style>
+        .bob-style {
+          background-image: url(${rootURL}/plugin/bobross/images/<j:out value="${from.style.toString().toLowerCase()}"/>.jpg);
+          background-repeat: no-repeat;
+          background-position: bottom right;
+          padding-bottom: 270px !important;
+        }
+    </style>
+    <script>
+        if($('main-table')) {
+            $('main-table').setStyle({ backgroundImage: 'none' });
+        }
+        $('main-panel').addClassName('bob-style');
+    </script>
+</j:jelly>

@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-	ChuckNorris plugin displays a picture of Chuck Norris (instead of Jenkins the butler) and a random Chuck Norris 'The Programmer' fact on each build page.
+	BobRoss plugin displays a picture of Bob Ross (instead of Jenkins the butler) and a random Bob Ross 'The Programmer' fact on each build page.
 </div>
