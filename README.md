@@ -20,6 +20,30 @@ The way the plugin works is completely the same, just the images, quotes and som
 
 **Original code was written by [Cliffano Subagio / cliffano](https://github.com/cliffano) in 2009.**
 
+## Usage
+
+Preferrably in the `always` section of the `post` section of a [Jenkins Pipeline](https://www.jenkins.io/doc/book/pipeline/).
+
+```
+pipeline {
+   agent any
+
+   stages {
+      stage('Hello') {
+         steps {
+            echo "hello world"
+         }
+      }
+   }
+   
+   post {
+      always {
+         bobRoss()
+      }
+   }
+}
+```
+
 ## Samples
 
 ### Failure
