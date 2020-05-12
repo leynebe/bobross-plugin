@@ -74,8 +74,10 @@ Get a beautiful piece of landscape with the possibility of happy little trees as
 
 ## To-do
 
+* Finish adding releasing into the Github Actions pipeline. (currently broken)
 * Add picking random images to Style.java.
 * Find a solution for adding .png files.
 * Add more images (see unused folder).
 * Add more quotes.
 * (long term) See if this can be integrated into Blue Ocean. Probably needs some more .css/html magic.
+
