@@ -79,7 +79,7 @@ pipeline {
 ## To-do
 
 * Finish adding releasing into the Github Actions pipeline. (currently broken)
-* Add picking random images to Style.java.
+* Add picking random images to Style.java. ** See the dynamicImagesBadlyImplementedAndTestsFailing branch for that disaster. **
 * Find a solution for adding .png files.
 * Add more images (see unused folder).
 * Add more quotes.
