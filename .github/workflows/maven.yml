@@ -6,8 +6,10 @@ name: Java CI with Maven
 on:
   push:
     branches: [ master ]
+    tags: [ bobross-v** ]
   pull_request:
     branches: [ master ]
+    tags: [ bobross-v** ]
 
 jobs:
   build:
