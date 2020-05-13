@@ -23,23 +23,15 @@ package hudson.plugins.bobross;
 
 import hudson.FilePath;
 import hudson.Launcher;
-import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
-import hudson.model.Action;
-import hudson.model.BuildListener;
-import hudson.model.Result;
-import hudson.model.Run;
-import hudson.model.TaskListener;
+import hudson.model.*;
 import hudson.tasks.BuildStepMonitor;
 import hudson.tasks.Recorder;
-
-import java.io.IOException;
-import java.util.logging.Logger;
-
 import jenkins.tasks.SimpleBuildStep;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 import javax.annotation.Nonnull;
+import java.io.IOException;
+import java.util.logging.Logger;
 
 /**
  * This class associates a BeatBrushAction to a job or a build. For more info
@@ -95,7 +87,7 @@ public class ChipmunkRecorder extends Recorder implements SimpleBuildStep {
         if (build != null) {
             Result result = build.getResult();
             if (result != null) {
-                Style style = Style.get(result);
+                String style = Style.get(result);
                 String fact = factGenerator.random();
                 action = new BeatBrushAction(style, fact);
             }
@@ -165,7 +157,7 @@ public class ChipmunkRecorder extends Recorder implements SimpleBuildStep {
      *            the run
      */
     public void perform(final Run<?, ?> run) {
-        Style style = Style.get(run.getResult());
+        String style = Style.get(run.getResult());
         String fact = factGenerator.random();
         run.addAction(new BeatBrushAction(style, fact));
     }

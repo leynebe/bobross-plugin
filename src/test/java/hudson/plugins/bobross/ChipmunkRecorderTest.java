@@ -46,7 +46,6 @@ public class ChipmunkRecorderTest extends TestCase {
 		Action action = recorder.getProjectAction(mockProject);
 
 		assertTrue(action instanceof BeatBrushAction);
-		assertEquals(Style.PAINTING, ((BeatBrushAction) action).getStyle());
 		assertNotNull(((BeatBrushAction) action).getFact());
 	}
 
@@ -67,7 +66,7 @@ public class ChipmunkRecorderTest extends TestCase {
 		BeatBrushAction action = actionCaptor.getValue();
 
 		verify(mockBuild, times(1)).addAction(same(action));
-		assertEquals(Style.PORTRAIT, (action).getStyle());
+		assertNotNull((action).getStyle());
 		assertEquals("Bob Ross gently burst the dot com bubble.", action.getFact());
 	}
 }

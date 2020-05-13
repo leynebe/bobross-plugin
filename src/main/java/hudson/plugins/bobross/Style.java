@@ -22,6 +22,10 @@
 package hudson.plugins.bobross;
 
 import hudson.model.Result;
+import org.apache.commons.io.FilenameUtils;
+
+import java.util.Random;
+import java.util.Set;
 
 /**
  * This class provides various Bob Ross' styles.
@@ -39,8 +43,15 @@ public enum Style {
      *            the build result
      * @return the style
      */
-    public static final Style get(final Result result) {
+    public static final String get(final Result result) {
         Style style;
+
+        // Get all files
+        File file = new File();
+        Set<String> foundFiles;
+        String randomFileName = "painting"; // Set a default painting for when something fails with the randomizer code
+
+        // Determine what the image should be
         if (Result.FAILURE.equals(result)) {
             // Get a comforting portait of a confident and forgiving man when your build fails.
             style = PORTRAIT;
@@ -51,6 +62,28 @@ public enum Style {
             // Get a confused but cute and fuzzy little animal when things are a bit unstable.
             style = CHIPMUNK;
         }
-        return style;
+
+        // Find files related to the style
+        System.out.println("### Style "+style.toString().toLowerCase());
+        foundFiles = file.findFiles(style.toString().toLowerCase());
+        System.out.println("### Files "+foundFiles.toString());
+
+        // Pick a random file from the files found
+        int size = foundFiles.size();
+        if(size > 0){
+            System.out.println("### "+size+" is greater than 0.");
+            int item = new Random().nextInt(size);
+            int i = 0;
+            for(String foundFile : foundFiles)
+            {
+                if (i == item)
+                    randomFileName = FilenameUtils.getBaseName(foundFile);
+                i++;
+            }
+        } else {
+            System.out.println("### "+size+" is not greater than 0.");
+        }
+
+        return randomFileName;
     }
 }

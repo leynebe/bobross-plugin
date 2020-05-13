@@ -38,7 +38,6 @@ public class BobRossStepTest {
 				story.j.assertBuildStatus(Result.FAILURE, b1);
 				
 				BeatBrushAction action = b1.getAction(BeatBrushAction.class);
-				assertEquals(Style.PORTRAIT, action.getStyle());
 				assertNotNull(action.getFact());
 			}
 		});
@@ -63,7 +62,6 @@ public class BobRossStepTest {
 				story.j.assertBuildStatus(Result.UNSTABLE, b1);
 				
 				BeatBrushAction action = b1.getAction(BeatBrushAction.class);
-				assertEquals(Style.CHIPMUNK, action.getStyle());
 				assertNotNull(action.getFact());
 			}
 		});
@@ -87,7 +85,6 @@ public class BobRossStepTest {
 				story.j.assertBuildStatus(Result.SUCCESS, b1);
 				
 				BeatBrushAction action = b1.getAction(BeatBrushAction.class);
-				assertEquals(Style.PAINTING, action.getStyle());
 				assertNotNull(action.getFact());
 			}
 		});
@@ -119,16 +116,13 @@ public class BobRossStepTest {
 				story.j.assertBuildStatus(Result.FAILURE, b2);
 				
 				BeatBrushAction action1 = b1.getAction(BeatBrushAction.class);
-				assertEquals(Style.PAINTING, action1.getStyle());
 				assertNotNull(action1.getFact());
 				
 				BeatBrushAction action2 = b2.getAction(BeatBrushAction.class);
-				assertEquals(Style.PORTRAIT, action2.getStyle());
 				assertNotNull(action2.getFact());
 				
 				// Make sure we get the action from the last completed build (jenkins default behaviour is last successful build)
 				BeatBrushAction projectAction = p.getAction(BeatBrushAction.class);
-				assertEquals(Style.PORTRAIT, projectAction.getStyle());
 				assertNotNull(projectAction.getFact());
 			}
 		});

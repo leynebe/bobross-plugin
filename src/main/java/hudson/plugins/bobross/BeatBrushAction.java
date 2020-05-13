@@ -42,12 +42,12 @@ public final class BeatBrushAction implements RunAction2, LastBuildAction {
     /**
      * The style - for backward compatibility to version 0.2.
      */
-    private Style style;
+    private String style;
 
     /**
      * The style.
      */
-    private Style mStyle;
+    private String mStyle;
 
     /**
      * The fact - for backward compatibility to version 0.2.
@@ -71,7 +71,7 @@ public final class BeatBrushAction implements RunAction2, LastBuildAction {
      * @param fact
      *            the fact
      */
-    public BeatBrushAction(final Style style, final String fact) {
+    public BeatBrushAction(final String style, final String fact) {
         super();
         this.mStyle = style;
         this.mFact = fact;
@@ -107,8 +107,8 @@ public final class BeatBrushAction implements RunAction2, LastBuildAction {
      */
     // TODO : check infra statistics to see if someone still has bobross in 0.2...
     @SuppressFBWarnings(value = "UWF_UNWRITTEN_FIELD", justification = "that field could have been deserialized from old <= 0.2")
-    public Style getStyle() {
-        Style theStyle;
+    public String getStyle() {
+        String theStyle;
         if (mRun != null) {
         	theStyle = Style.get(mRun.getResult());
         } else if (mStyle != null) {
