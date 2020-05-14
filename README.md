@@ -1,6 +1,6 @@
 # Bob Ross Jenkins Plugin
 
-![](https://img.shields.io/github/workflow/status/leynebe/bobross-plugin/Java%20CI%20with%20Maven%20plus%20automatic%20release on%20tags)
+![](https://img.shields.io/github/workflow/status/leynebe/bobross-plugin/Java%20CI%20with%20Maven%20plus%20automatic%20release%20on%20tags)
 ![](https://img.shields.io/github/languages/top/leynebe/bobross-plugin)
 ![](https://img.shields.io/github/repo-size/leynebe/bobross-plugin)
 ![](https://img.shields.io/github/downloads/leynebe/bobross-plugin/total)
